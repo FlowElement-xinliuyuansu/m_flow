@@ -11,7 +11,7 @@ import json
 import os
 from datetime import datetime, timezone
 
-import diskcache as dc
+import diskcache_community as dc
 
 from m_flow.adapters.cache.cache_db_interface import CacheDBInterface
 from m_flow.adapters.exceptions.exceptions import (
@@ -38,7 +38,7 @@ class FSCacheAdapter(CacheDBInterface):
         cache_path = os.path.join(root_dir, ".m_flow_fs_cache", "sessions_db")
         os.makedirs(cache_path, exist_ok=True)
 
-        self.cache = dc.Cache(directory=cache_path)
+        self.cache = dc.Cache(directory=cache_path, disk=dc.SafeDisk.with_options(on_error="miss"))
         self.cache.expire()
 
         _log.debug(f"FSCache initialized: {cache_path}")

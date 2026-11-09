@@ -1791,6 +1791,15 @@ wheels = [
 ]
 
 [[package]]
+name = "diskcache-community"
+version = "5.8.4"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/ab/19/7b58d6973c4021034936d595051916e850549bff096dffa3edefcd3310b2/diskcache_community-5.8.4.tar.gz", hash = "sha256:ed359124af93879978b2851a81f437c4e708f946e4ee5db7256b95f562ee0eeb", size = 140255, upload-time = "2026-11-06T07:12:38.556Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/fa/07/dd836e64b6dfcae13ff48a24e1f0522af1f266c8eac0a678b8d03fb27dbf/diskcache_community-5.8.4-py3-none-any.whl", hash = "sha256:5c60a23a3f245616f9425144c936181709ccf69e5885ef25325b29cd7c4e3744", size = 83062, upload-time = "2026-11-06T07:12:36.776Z" },
+]
+
+[[package]]
 name = "distlib"
 version = "0.4.0"
 source = { registry = "https://pypi.org/simple" }
@@ -4585,7 +4594,7 @@ dependencies = [
     { name = "aiolimiter" },
     { name = "aiosqlite" },
     { name = "alembic" },
-    { name = "diskcache" },
+    { name = "diskcache-community" },
     { name = "fastapi" },
     { name = "fastapi-users", extra = ["sqlalchemy"] },
     { name = "filetype" },
@@ -4784,7 +4793,7 @@ requires-dist = [
     { name = "debugpy", marker = "extra == 'debug'", specifier = ">=1.8.0,<2.0.0" },
     { name = "deepeval", marker = "extra == 'deepeval'", specifier = ">=3.0.0,<4" },
     { name = "deptry", marker = "extra == 'dev'", specifier = ">=0.20.0,<0.26" },
-    { name = "diskcache", specifier = ">=5.6.0" },
+    { name = "diskcache-community", specifier = ">=5.8.4" },
     { name = "dlt", extras = ["sqlalchemy"], marker = "extra == 'dlt'", specifier = ">=1.8.0,<2" },
     { name = "docling", marker = "extra == 'docling'", specifier = ">=2.50" },
     { name = "fastapi", specifier = ">=0.115.0,<1.0.0" },
